@@ -1,0 +1,118 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Desktops */
+@media only screen and (max-width : 1660px) {
+  .nav__first-ul {
+    margin-right: 44px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1500px) {
+  .header {
+    grid-template-columns: 160px 1fr;
+  }
+
+  .open-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .open-menu__first,
+  .open-menu__third {
+    background-color: #fff;
+    width: 47px;
+    height: 3px;
+  }
+
+  .open-menu__second {
+    width: 32px;
+    height: 3px;
+    background-color: #F9B233;
+    margin: 9px 0;
+  }
+
+  .nav {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 40px;
+    transform: translateX(-3000px);
+    transition: ease-in-out 0.9s;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .nav__item {
+    display: block;
+    text-align: center;
+  }
+
+  .nav__first-ul {
+    margin: 40px 0;
+  }
+
+  .nav-open {
+    transform: translateX(0px);
+  }
+
+  .nav__item + .nav__item {
+    margin-left: 0;
+  }
+
+  .close-menu {
+    display: block;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+  }
+
+  .close-menu:focus {
+    transform: rotate(180deg);
+  }
+  
+
+  .close-menu__first,
+  .close-menu__second {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 6px;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+
+  .close-menu__first {
+    transform: rotate(45deg);
+  }
+
+  .close-menu__second {
+    transform: rotate(-45deg);
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 860px) {
+  
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 600px) {
+  
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 420px) {
+  
+}
