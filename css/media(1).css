@@ -1,118 +1,217 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Desktops */
-@media only screen and (max-width : 1660px) {
-  .nav__first-ul {
-    margin-right: 44px;
+@media only screen and (max-width : 1740px) {
+  .third {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+
+/* Desktops */
+@media only screen and (max-width : 1540px) {
+  .third {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .beer {
+    margin-top: 40px;
+  }
+}
+
+/* Desktops */
+@media only screen and (max-width : 1435px) {
+  .events__item {
+    margin-bottom: 30px;
+  }
+
+  .events {
+    margin-bottom: 155px;
   }
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 1500px) {
+@media only screen and (max-width : 1200px) {
   .header {
-    grid-template-columns: 160px 1fr;
+    padding-left: 2%;
+    padding-right: 2%;
   }
+}
 
-  .open-menu {
-    display: flex;
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 783px) {
+  .beer {
     flex-direction: column;
-    align-items: flex-end;
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  }
+  
+  .beer__img-2 {
+    margin-left: 0;
+    margin-top: 18px;
   }
 
-  .open-menu__first,
-  .open-menu__third {
-    background-color: #fff;
-    width: 47px;
-    height: 3px;
+  .third {
+    align-items: flex-start;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 660px) {
+  .header__title {
+    font-size: 60px;
   }
 
-  .open-menu__second {
-    width: 32px;
-    height: 3px;
-    background-color: #F9B233;
-    margin: 9px 0;
-  }
-
-  .nav {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    padding-top: 40px;
-    transform: translateX(-3000px);
-    transition: ease-in-out 0.9s;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-
-  .nav__item {
-    display: block;
+  .header__sub-title {
     text-align: center;
   }
 
-  .nav__first-ul {
-    margin: 40px 0;
+  .header__title, .header__sub-title {
+    text-shadow: 0px 1px 1px rgb(0, 0, 0);
   }
 
-  .nav-open {
-    transform: translateX(0px);
+  .events__item__title {
+    text-align: center;
   }
 
-  .nav__item + .nav__item {
-    margin-left: 0;
+  .wrapper__title {
+    font-size: 50px;
   }
 
-  .close-menu {
-    display: block;
-    position: absolute;
-    top: 10%;
-    right: 10%;
+  .events__item__title {
+    font-size: 25px;
   }
 
-  .close-menu:focus {
-    transform: rotate(180deg);
-  }
-  
-
-  .close-menu__first,
-  .close-menu__second {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    width: 50px;
-    height: 6px;
-    border-radius: 4px;
-    background-color: #fff;
+  .craft__title {
+    font-size: 50px;
   }
 
-  .close-menu__first {
-    transform: rotate(45deg);
-  }
-
-  .close-menu__second {
-    transform: rotate(-45deg);
+  .craft__description {
+    font-size: 20px;
   }
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 860px) {
-  
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 600px) {
-  
+@media only screen and (max-width : 480px) {
+  .beer__img-right, 
+  .beer__img-2 {
+    width: 100%;
+  }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 420px) {
-  
+  .header__title {
+    font-size: 50px;
+  }
+
+  .header__sub-title {
+    font-size: 18px;
+  }
+
+  .order {
+    padding: 14px 38px;
+  }
+
+  .order:hover {
+    padding: 14px 46px;
+    letter-spacing: 1px;
+  }
+
+  .events__item__description {
+    font-size: 14px;
+  }
+
+  .craft__title {
+    font-size: 45px;
+  }
+
+  .craft__description {
+    font-size: 18px;
+  }
+
+  .third__order {
+    font-size: 16px;
+  }
+
+  .crayfish__item__title {
+    font-size: 13px;
+  }
+
+  .crayfish__item__description {
+    font-size: 20px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 375px) {
+  .beer__img-left,
+  .beer__img-2 {
+    width: 100%;
+  }
+}
+
+/* Desktops */
+@media only screen and (min-width : 1920px) {
+  .header__title {
+    font-size: calc(80px + 1em);
+    padding-bottom: 60px;
+  }
+
+  .header__sub-title {
+    font-size: calc(25px + 0.5em);
+  }
+
+  .order {
+    margin-top: 40px;
+    font-size: calc(18px + 0.5em);
+    line-height: calc(19px + 0.5em);
+    padding: 30px 50px;
+    border-radius: 60px
+  }
+
+  .order:hover {
+    padding: 30px 66px;
+    letter-spacing: 3px;
+  }
+
+  .wrapper__title {
+    font-size: calc(60px + 2em);
+  }
+
+  .events__item__title {
+    font-size: calc(30px + 1em);
+  }
+
+  .events__item__description {
+    font-size: calc(16px + 1em);
+    line-height: calc(19px + 1em);
+    min-width: calc(250px + 2em);
+  }
+
+  .craft__title {
+    font-size: calc(45px + 2em);
+  }
+
+  .craft__description {
+    font-size: calc(18px + 1em);
+    line-height: calc(109% + 0.1em);
+  }
+
+  .third__order {
+    font-size: calc(16px + 1em);
+  }
+
+  .third {
+    max-width: 1920px;
+  }
+
+  .crayfish__item__title {
+    font-size: calc(13px + 1em);
+  }
+
+  .crayfish__item__description {
+    font-size: calc(20px + 1.5em);
+    line-height: 120%;
+  }
 }
