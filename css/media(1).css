@@ -2,9 +2,19 @@
 
 /* Desktops */
 @media only screen and (max-width : 1740px) {
-  .third {
+  .third,
+  .sixth {
     padding-left: 2%;
     padding-right: 2%;
+  }
+
+  .sixth {
+    flex-direction: column;
+    align-items: center;
+  }  
+
+  .recipes__title {
+    margin-top: 40px;
   }
 }
 
@@ -38,6 +48,31 @@
     padding-left: 2%;
     padding-right: 2%;
   }
+
+  .advantages {
+    flex-wrap: wrap;
+    max-width: 550px;
+  }
+
+  .advantages__item + .advantages__item {
+    margin-left: 5px;
+  }
+
+  .advantages__item {
+    margin: 5px;
+  }
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1025px) {
+  .fifth {
+    width: 96%;
+  }
+
+  .fifth__description {
+    max-width: 560px;
+  }  
 }
 
 /* Medium Devices, Desktops */
@@ -78,7 +113,8 @@
     font-size: 50px;
   }
 
-  .events__item__title {
+  .events__item__title,
+  .advantages__item__title {
     font-size: 25px;
   }
 
@@ -88,6 +124,37 @@
 
   .craft__description {
     font-size: 20px;
+  }
+
+  .fifth {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .fifth__title,
+  .recipes__title {
+    font-size: 50px;
+  }
+
+  .fifth__description,
+  .recipes__description {
+    font-size: 20px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 602px) {
+  .recipes {
+    margin-left: 0;
+  }
+  
+  .advantages {
+    justify-content: center;
+  }
+
+  .sixth__left {
+    width: 98%;
+    height: auto;
   }
 }
 
@@ -130,7 +197,8 @@
     font-size: 18px;
   }
 
-  .third__order {
+  .third__order,
+  .sixth__order {
     font-size: 16px;
   }
 
@@ -138,8 +206,19 @@
     font-size: 13px;
   }
 
-  .crayfish__item__description {
+  .crayfish__item__description,
+  .advantages__item__title {
     font-size: 20px;
+  }
+
+  .fifth__title,
+  .recipes__title {
+    font-size: 40px;
+  }
+
+  .fifth__description,
+  .recipes__description {
+    font-size: 18px;
   }
 }
 
@@ -175,7 +254,8 @@
     letter-spacing: 3px;
   }
 
-  .wrapper__title {
+  .wrapper__title, 
+  .recipes__title {
     font-size: calc(60px + 2em);
   }
 
@@ -213,5 +293,25 @@
   .crayfish__item__description {
     font-size: calc(20px + 1.5em);
     line-height: 120%;
+  }
+
+  .fifth {
+    max-width: 1325px;
+  }
+  
+  .fifth__title {
+    font-size: calc(60px + 2em);
+    line-height: 109%;
+  }
+  
+  .fifth__description,
+  .recipes__description {
+    font-size: calc(25px + 1em);
+    line-height: 120%;
+    max-width: 1000px;
+  }
+
+  .advantages__item__title {
+    font-size: calc(30px + 0.5em);
   }
 }
