@@ -29,6 +29,7 @@
 	<!-- CSS, fonts -->
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/media(1).css" />
+	<link rel="stylesheet" href="css/animate.css" />
 	<link rel="stylesheet" href="fonts/Roboto/stylesheet.css" />
 	<link rel="stylesheet" href="fonts/Lobster/stylesheet.css" />
 </head>
@@ -65,13 +66,13 @@
 
 <!--==================== 2 screen ====================-->
 		<section class="second">
-			<h2 class="wrapper__title">
+			<h2 class="wrapper__title wow bounceInDown">
 				<img data-src="img/beer.svg" alt="buy bear" />
 				<span>
 					Кейтеринг
 				</span>
 			</h2>
-			<div class="events">
+			<div class="events wow fadeInLeft">
 				<div tabindex="0" class="events__item">
 					<img class="events__item__img" data-src="img/event1.svg" alt="men`s party" />
 					<h3 class="events__item__title">
@@ -117,7 +118,7 @@
 <!--==================== 3 screen ====================-->
 		<section class="third">
 			<article class="craft">
-				<h2 class="craft__title">
+				<h2 class="craft__title wow fadeInLeftBig">
 					Собственный крафт
 				</h2>
 				<p class="craft__description">
@@ -147,7 +148,7 @@
 
 <!--==================== 4 screen ====================-->
 		<section class="fourth">
-			<h2 class="wrapper__title">
+			<h2 class="wrapper__title wow fadeInRightBig">
 				<img data-src="img/crayfish.svg" alt="buy crayfish" />
 				<span>
 					Свежие раки круглый год
@@ -360,7 +361,7 @@
 
 <!--==================== 8 screen ====================-->
 		<section class="eighth">
-			<div class="shares">
+			<div class="shares wow zoomIn">
 				<img class="shares__img" data-src="img/shares.jpg" alt="shares" />
 				<div class="shares__wrapper">
 					<h2 class="shares__title recipes__title">
@@ -392,5 +393,9 @@
 	<!--==================== Js ====================-->
 	<script src="js/preloader.js"></script>
 	<script src="js/lazy-loading.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </body>
 </html>
