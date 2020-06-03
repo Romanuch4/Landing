@@ -29,6 +29,15 @@ li {
 	list-style: none;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
 [data-src] {
   min-height: 10px;
   min-width: 10px;
@@ -469,4 +478,92 @@ li {
   line-height: 37px;
   text-align: center;
   color: #FFFFFF;
+}
+
+/*================ 7 screen ================*/
+.seventh {
+  margin-top: 180px;
+}
+
+.seventh__title {
+  font-family: var(--second-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 109%;
+  text-align: center;
+  color: #F2F2F2;
+}
+
+.seventh__sub-title {
+  font-family: var(--first-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  color: #F2F2F2;
+  margin-top: 25px;
+}
+
+.calculation {
+  max-width: 1680px;
+  margin: 50px auto 0 auto;
+}
+
+.calculation__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculation__item {
+  margin: 0px 25px 39px 25px;
+}
+
+
+.calculation__item__title {
+  font-family: var(--first-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--second-color);
+  margin-bottom: 8px;
+}
+
+.calculation__item__input {
+  border: 1px solid #F2F2F2;
+  border-radius: 30px;
+  font-family: var(--first-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #F2F2F2;
+  background-color: transparent;
+  width: 198px;
+  height: 57px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.calculation__item__input::placeholder {
+  font-size: 14;
+}
+
+.calculation__item__input-1 {
+  width: 321px;
+}
+
+.calculation__submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.calculation__button {
+  background: var(--main-color);
+  font-weight: bold;
+  cursor: pointer;
 }

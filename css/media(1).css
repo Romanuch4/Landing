@@ -42,6 +42,13 @@
   }
 }
 
+/* Desktops */
+@media only screen and (max-width : 1237px) {
+  .calculation {
+    max-width: 990px;
+  }
+}
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1200px) {
   .header {
@@ -76,6 +83,14 @@
 }
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width : 850px) {
+  .seventh {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+
+/* Medium Devices, Desktops */
 @media only screen and (max-width : 783px) {
   .beer {
     flex-direction: column;
@@ -101,7 +116,8 @@
     text-align: center;
   }
 
-  .header__title, .header__sub-title {
+  .header__title, 
+  .header__sub-title {
     text-shadow: 0px 1px 1px rgb(0, 0, 0);
   }
 
@@ -109,7 +125,11 @@
     text-align: center;
   }
 
-  .wrapper__title {
+  .wrapper__title,
+  .seventh__title,
+  .craft__title,
+  .fifth__title,
+  .recipes__title {
     font-size: 50px;
   }
 
@@ -118,26 +138,15 @@
     font-size: 25px;
   }
 
-  .craft__title {
-    font-size: 50px;
-  }
-
-  .craft__description {
-    font-size: 20px;
-  }
-
   .fifth {
     padding-left: 2%;
     padding-right: 2%;
   }
 
-  .fifth__title,
-  .recipes__title {
-    font-size: 50px;
-  }
-
   .fifth__description,
-  .recipes__description {
+  .recipes__description,
+  .craft__description,
+  .seventh__sub-title {
     font-size: 20px;
   }
 }
@@ -228,6 +237,10 @@
   .beer__img-2 {
     width: 100%;
   }
+
+  .calculation__item__input {
+    width: 310px;
+  }
 }
 
 /* Desktops */
@@ -237,7 +250,8 @@
     padding-bottom: 60px;
   }
 
-  .header__sub-title {
+  .header__sub-title,
+  .seventh__sub-title {
     font-size: calc(25px + 0.5em);
   }
 
@@ -255,7 +269,8 @@
   }
 
   .wrapper__title, 
-  .recipes__title {
+  .recipes__title,
+  .seventh__title {
     font-size: calc(60px + 2em);
   }
 
@@ -276,9 +291,11 @@
   .craft__description {
     font-size: calc(18px + 1em);
     line-height: calc(109% + 0.1em);
+    max-width: 1000px;
   }
 
-  .third__order {
+  .third__order,
+  .calculation__item__title {
     font-size: calc(16px + 1em);
   }
 
@@ -313,5 +330,15 @@
 
   .advantages__item__title {
     font-size: calc(30px + 0.5em);
+  }
+
+  .calculation__item__input {
+    width: 320px;
+    height: 70px;
+    font-size: calc(18px + 1em);
+  }
+
+  .calculation__item__title {
+    margin-bottom: 20px;
   }
 }
