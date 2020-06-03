@@ -1,1 +1,0 @@
-(()=>{const t=document.querySelectorAll("[data-src]"),e=new IntersectionObserver((t,e)=>{t.forEach(t=>{t.isIntersecting&&((t=>{const e=t.getAttribute("data-src");e&&(t.src=e)})(t.target),e.unobserve(t.target))})},{threshold:0,tootMargin:"0px 0px 300px 0px"});t.forEach(t=>{e.observe(t)})})();
