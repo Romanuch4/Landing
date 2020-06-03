@@ -3,7 +3,9 @@
 /* Desktops */
 @media only screen and (max-width : 1740px) {
   .third,
-  .sixth {
+  .sixth,
+  .footer,
+  .eighth {
     padding-left: 2%;
     padding-right: 2%;
   }
@@ -15,6 +17,10 @@
 
   .recipes__title {
     margin-top: 40px;
+  }
+
+  .shares__title {
+    margin-top: 0;
   }
 }
 
@@ -129,7 +135,8 @@
   .seventh__title,
   .craft__title,
   .fifth__title,
-  .recipes__title {
+  .recipes__title,
+  .footer__title {
     font-size: 50px;
   }
 
@@ -146,7 +153,9 @@
   .fifth__description,
   .recipes__description,
   .craft__description,
-  .seventh__sub-title {
+  .seventh__sub-title,
+  .shares__text,
+  .footer__sub-title__email {
     font-size: 20px;
   }
 }
@@ -221,12 +230,15 @@
   }
 
   .fifth__title,
-  .recipes__title {
+  .recipes__title,
+  .footer__title {
     font-size: 40px;
   }
 
   .fifth__description,
-  .recipes__description {
+  .recipes__description,
+  .shares__text,
+  .footer__sub-title {
     font-size: 18px;
   }
 }
@@ -241,6 +253,15 @@
   .calculation__item__input {
     width: 310px;
   }
+
+  .footer__sub-title {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__sub-title__email {
+    padding-left: 0px;
+  } 
 }
 
 /* Desktops */
@@ -270,7 +291,8 @@
 
   .wrapper__title, 
   .recipes__title,
-  .seventh__title {
+  .seventh__title,
+  .footer__title {
     font-size: calc(60px + 2em);
   }
 
@@ -322,13 +344,15 @@
   }
   
   .fifth__description,
-  .recipes__description {
+  .recipes__description,
+  .shares__text {
     font-size: calc(25px + 1em);
     line-height: 120%;
     max-width: 1000px;
   }
 
-  .advantages__item__title {
+  .advantages__item__title,
+  .footer__sub-title {
     font-size: calc(30px + 0.5em);
   }
 
